@@ -17,7 +17,7 @@
           <input type="search" v-model="filter"/>
         </div>
         <ul>
-          <li v-for="item,key in objEmails "  :class="item?'marked':''">{{key}}</li>
+          <li v-for="item,key in objEmails "  :class="{'marked':item}">{{key}}</li>
         </ul>
       </div>
     </div>
